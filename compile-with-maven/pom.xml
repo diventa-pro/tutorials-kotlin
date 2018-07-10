@@ -1,8 +1,8 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <name>Maven Default Project</name>
-    <artifactId>xxx</artifactId>
-    <groupId>xxx</groupId>
+    <groupId>pro.diventa.tutorials.kotlin</groupId>
+    <artifactId>compile-with-maven</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
@@ -31,12 +31,16 @@
                 <executions>
                     <execution>
                         <id>compile</id>
-                        <goals> <goal>compile</goal> </goals>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
                     </execution>
 
                     <execution>
                         <id>test-compile</id>
-                        <goals> <goal>test-compile</goal> </goals>
+                        <goals>
+                            <goal>test-compile</goal>
+                        </goals>
                     </execution>
                 </executions>
             </plugin>
