@@ -1,16 +1,5 @@
 package pro.diventa.tutorials.kotlin
 
-fun main(args: Array<String>) {
-    val dog = Dog("Angus")
-    val cat = Cat("Sylvester")
-    funWithAnimal(dog)
-    funWithAnimal(cat)
-}
-
-fun funWithAnimal(animal: Animal) {
-    println( "${animal} talks like that: ${animal.speak()}" )
-}
-
 abstract class Animal(name: String) {
 
     private val name = name
@@ -18,7 +7,11 @@ abstract class Animal(name: String) {
     open abstract fun speak(): String
 
     override fun toString(): String {
-        return "A ${this.javaClass.simpleName} called $name"
+        return "a ${this.javaClass.simpleName.toLowerCase()} called $name"
+    }
+
+    fun describe(): String {
+        return "${this} talks like that: ${this.speak()}"
     }
 }
 
