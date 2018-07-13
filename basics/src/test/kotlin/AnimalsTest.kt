@@ -6,7 +6,7 @@ import pro.diventa.tutorials.kotlin.Dog
 import org.assertj.core.api.Assertions.*
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class `AnimalsTest.kt` {
+class AnimalsTest {
 
     @Test
     fun dogSpeak() {
